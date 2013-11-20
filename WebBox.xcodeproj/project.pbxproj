@@ -19,6 +19,7 @@
 		30A238C9183D38B600A1C519 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A238B1183D38B600A1C519 /* UIKit.framework */; };
 		30A238DE183D38C900A1C519 /* DRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A238DD183D38C900A1C519 /* DRViewController.m */; };
 		30A238E1183D390200A1C519 /* DRWebBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A238E0183D390200A1C519 /* DRWebBoxView.m */; };
+		30A238E6183D43E700A1C519 /* DRWebBoxView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 30A238E5183D43E700A1C519 /* DRWebBoxView.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		30A238DD183D38C900A1C519 /* DRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRViewController.m; sourceTree = "<group>"; };
 		30A238DF183D390200A1C519 /* DRWebBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRWebBoxView.h; sourceTree = "<group>"; };
 		30A238E0183D390200A1C519 /* DRWebBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRWebBoxView.m; sourceTree = "<group>"; };
+		30A238E5183D43E700A1C519 /* DRWebBoxView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DRWebBoxView.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		30A238B4183D38B600A1C519 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				30A238E5183D43E700A1C519 /* DRWebBoxView.podspec */,
 				30A238B5183D38B600A1C519 /* WebBox-Info.plist */,
 				30A238B6183D38B600A1C519 /* InfoPlist.strings */,
 				30A238B9183D38B600A1C519 /* main.m */,
@@ -206,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A238E6183D43E700A1C519 /* DRWebBoxView.podspec in Resources */,
 				30A238B8183D38B600A1C519 /* InfoPlist.strings in Resources */,
 				30A238C0183D38B600A1C519 /* Images.xcassets in Resources */,
 			);
