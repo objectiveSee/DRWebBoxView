@@ -130,7 +130,6 @@
 
 - (void)reloadRequest:(id)sender
 {
-    self.request = [DRWebBoxView requestFromURL:[NSURL URLWithString:@"http://www.google.com"]];
     [self loadRequest:self.request];
 }
 
