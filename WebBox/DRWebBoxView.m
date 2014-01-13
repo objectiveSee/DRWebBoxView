@@ -12,7 +12,7 @@
 @interface DRWebBoxView ()
 @property (nonatomic) NSInteger pendingRequestCount;
 @property (nonatomic) NSURLRequest *request;
-@property (nonatomic) UIActivityIndicatorView *activityIndicatorView;
+@property (nonatomic, readwrite) UIActivityIndicatorView *activityIndicatorView;
 @property (nonatomic) UIButton *reloadButton;
 @property (nonatomic) UIWebView *webView;
 @property (nonatomic) NSError *error;

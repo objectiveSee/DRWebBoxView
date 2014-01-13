@@ -12,6 +12,7 @@
 @property (nonatomic, readonly) UIWebView *webView;
 @property (nonatomic, readonly) UIButton *reloadButton;
 @property (nonatomic, readonly) NSURLRequest *request;
+@property (nonatomic, readonly) UIActivityIndicatorView *activityIndicatorView;
 
 - (void)reloadRequest:(id)sender;
 - (void)loadRequest:(NSURLRequest *)request;
