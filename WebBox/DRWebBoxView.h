@@ -13,6 +13,8 @@
 @property (nonatomic, readonly) UIButton *reloadButton;
 @property (nonatomic, readonly) NSURLRequest *request;
 @property (nonatomic, readonly) UIActivityIndicatorView *activityIndicatorView;
+@property (nonatomic, readonly) BOOL isBusy;    // in case you want to use a custom activity indicator, then KVO this
+@property (nonatomic, readwrite) BOOL fadeTransitions;
 
 - (void)reloadRequest:(id)sender;
 - (void)loadRequest:(NSURLRequest *)request;

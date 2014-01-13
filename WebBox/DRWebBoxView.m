@@ -16,6 +16,7 @@
 @property (nonatomic) UIButton *reloadButton;
 @property (nonatomic) UIWebView *webView;
 @property (nonatomic) NSError *error;
+@property (nonatomic) BOOL isBusy;
 @end
 
 #pragma mark -
@@ -147,19 +148,36 @@
         return;
     }
     
+    BOOL webviewHidden = NO;
+    
     if ( self.pendingRequestCount <= 0 )
     {
         [self.activityIndicatorView stopAnimating];
         
         BOOL hasError = (self.error != nil);
         self.reloadButton.hidden = !hasError;
+        webviewHidden = hasError;
         self.webView.hidden = hasError;
+        self.isBusy = NO;
     }
     else
     {
         [self.activityIndicatorView startAnimating];
         self.reloadButton.hidden = YES;
-        self.webView.hidden = YES;
+        webviewHidden = YES;
+        self.isBusy = YES;
+    }
+    
+    if ( self.fadeTransitions ) {
+        
+        NSTimeInterval duration = webviewHidden ? 0 : 0.8;  // don't fade the transition to loading because that will look glitchy since user will see the webview when it is in a transitoning state of HTML loading
+        [UIView animateWithDuration:duration animations:^{
+            self.webView.alpha = webviewHidden ? 0 : 1;
+        } completion:^(BOOL finished) {
+        }];
+        
+    } else {
+        self.webView.hidden = webviewHidden;
     }
 }
 
