@@ -31,8 +31,8 @@
         // WebView
         self.webView = [[UIWebView alloc] initWithFrame:self.bounds];
         self.webView.backgroundColor = [UIColor whiteColor];
-//        self.webView.scrollView.scrollEnabled = NO;
         self.webView.delegate = self;
+        self.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         [self addSubview:self.webView];
         
         
